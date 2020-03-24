@@ -1,0 +1,13 @@
+/** 鼠标样式 开始**/
+/** 普通指针样式**/
+body {
+cursor: url(https://s2.ax1x.com/2020/02/18/3kb45q.png), default;
+}
+/** 链接指针样式**/
+a:hover{cursor:url(https://s2.ax1x.com/2020/02/18/3kbfVs.png), pointer;}
+/** 鼠标样式 结束**/
+.fed-head-info .fed-pops-cuts { margin-left: 7.1875rem; padding: 0 11.875rem 0 48% }
+.fed-head-info .fed-pops-code, .fed-head-info .fed-pops-record { margin-left: 70% }
+.fed-list-rank { padding-top: 1.25rem }
+.fed-list-rank li { padding-top: 1rem }
+}
