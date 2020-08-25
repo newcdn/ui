@@ -20,7 +20,7 @@
 
 ### css效果说明
 * zhizhen.css------鼠标指针式样
->>>引用地址<script src="https://cdn.jsdelivr.net/gh/newcdn/ui/css/zhizhen.css"></script>
+>>>引用地址<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/newcdn/ui/css/zhizhen.css">
 
 ------
 ********
