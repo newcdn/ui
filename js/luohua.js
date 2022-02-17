@@ -2,10 +2,10 @@ if(!Date.now){Date.now=function(){return new Date().getTime()}}(function(){var v
 for(i=0;i<options.flakeCount;i+=1){flakes.push(new Flake(random(widthOffset,elWidth-widthOffset),random(0,elHeight),random((options.minSize*100),(options.maxSize*100))/100,random(options.minSpeed,options.maxSpeed)))}if(options.round){$(".snowfall-flakes").css({"-moz-border-radius":options.maxSize,"-webkit-border-radius":options.maxSize,"border-radius":options.maxSize})}if(options.shadow){$(".snowfall-flakes").css({"-moz-box-shadow":"1px 1px 1px #555","-webkit-box-shadow":"1px 1px 1px #555","box-shadow":"1px 1px 1px #555"})}var doRatio=false;if(options.deviceorientation){$(window).bind("deviceorientation",function(event){doRatio=event.originalEvent.gamma*0.1})}function snow(){for(i=0;i<flakes.length;i+=1){flakes[i].update()}snowTimeout=requestAnimationFrame(function(){snow()})}snow();this.clear=function(){$(".snowfall-canvas").remove();$(element).children(".snowfall-flakes").remove();cancelAnimationFrame(snowTimeout)}};$.fn.snowfall=function(options){if(typeof(options)=="object"||options==undefined){return this.each(function(i){(new $.snowfall(this,options))})}else{if(typeof(options)=="string"){return this.each(function(i){var snow=$(this).data("snowfall");if(snow){snow.clear()}})}}}})(jQuery);
 
 $(document).ready(function(){
-	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/1.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:20,});
-	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/2.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:20,});
-	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/3.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:20,});
-	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/4.png", flakeCount:20, minSpeed:1, minSize:8, maxSize:20,});
+	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/1.png", flakeCount:10, minSpeed:1, minSize:8, maxSize:20,});
+	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/2.png", flakeCount:10, minSpeed:1, minSize:8, maxSize:20,});
+	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/3.png", flakeCount:10, minSpeed:1, minSize:8, maxSize:20,});
+	$(document).snowfall({image:"https://cdn.jsdelivr.net/gh/newcdn/ui/img/4.png", flakeCount:10, minSpeed:1, minSize:8, maxSize:20,});
 
 
 	
